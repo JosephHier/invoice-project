@@ -1,0 +1,20 @@
+div.container-fluid
+  h4 Search Invoices:
+  form.form-inline
+    div.form-group
+      <input class="form-control" id="query" placeholder="Invoice or PO Number:"/>
+      <input type="button" class="form-control btn btn-primary" id="search" value="Submit">
+  <br/>
+  table.table.table-striped
+    thead
+      tr
+        th(scope="col") id
+        th(scope="col") invoice_number
+        th(scope="col") po_number
+        th(scope="col") due_date
+        th(scope="col") amount_cents
+        th(scope="col") created_at
+    tbody
+script
+  include js/search.js
+

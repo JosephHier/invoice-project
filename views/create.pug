@@ -1,0 +1,16 @@
+div.container-fluid
+  h4 Create an Invoice:
+  form
+    div.form-group
+      label Invoice Number:
+      <input class="form-control" id="invoice-number" placeholder="Invoice Number:"/>
+      label Po Number:
+      <input class="form-control" id="po-number" placeholder="PO Number:"/>
+      label Due Date:
+      <input type="date" class="form-control" id="due-date" />
+      label Amount Due:
+      <input type="number" class="form-control" id="amount-cents" placeholder="Amount Cents:"/>
+  button.btn.btn-primary#submit Submit
+
+script
+  include js/create.js

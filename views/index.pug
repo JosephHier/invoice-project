@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Invoices
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    style
+      include css/style.css
+    script
+      include js/index.js
+  body
+    div.row
+      div.col-3
+        include create.pug
+      div.col-9
+        include search.pug
+
