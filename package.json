@@ -2,25 +2,24 @@
   "name": "invoice-project",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JosephHier/invoice-project.git"
-  },
-  "author": "",
+  "author": "Joe Hier",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JosephHier/invoice-project/issues"
-  },
-  "homepage": "https://github.com/JosephHier/invoice-project#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mongoose": "^5.4.5",
-    "morgan": "^1.9.1"
+    "mongoose": "^5.4.3",
+    "mongoose-long": "^0.2.1",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "pug": "^2.0.3",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
